@@ -1,5 +1,14 @@
 ---
-console.log("hey")
+import type {AppRouter} from "@/pages/api/trpc/[trpc]"
+import { createTRPCClient } from '@trpc/client';
+
+// TODO create integration to have a wrapper around this client
+// so that the config lives in the astro.config.mjs
+const client = createTRPCClient<AppRouter>({
+  url: 'http://localhost:3000/api/trpc',
+});
+
+const data = await client.query("hey", {text: "my friend"});
 ---
 
 <meta charset="utf-8" />
@@ -9,5 +18,5 @@ console.log("hey")
 <title>Astro</title>
 
 <body>
-  <p> Hello World </p>
+  <p> {data.greeting} </p>
 </body>

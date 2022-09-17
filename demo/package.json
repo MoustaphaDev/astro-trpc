@@ -1,15 +1,19 @@
 {
-  "name": "@example/minimal",
-  "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "devDependencies": {
-    "astro": "^1.2.4"
-  }
+    "name": "@example/minimal",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "dev": "astro dev",
+        "start": "astro dev",
+        "build": "astro build",
+        "preview": "astro preview",
+        "astro": "astro"
+    },
+    "devDependencies": {
+        "astro": "^1.2.4",
+        "astro-trpc": "^0.1.0"
+    },
+    "dependencies": {
+        "@astrojs/node": "^1.0.1"
+    }
 }
