@@ -1,0 +1,40 @@
+{
+    "name": "astro-trpc",
+    "version": "0.1.0",
+    "description": "",
+    "license": "MIT",
+    "type": "module",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": "./dist/index.js"
+    },
+    "files": [
+        "dist"
+    ],
+    "globals": {
+        "globalThis": true
+    },
+    "scripts": {
+        "build": "tsc",
+        "clean": "rm -rf ./dist",
+        "dev": "tsc --watch",
+        "prebuild": "npm run clean",
+        "prepublishOnly": "npm run clean && npm run build",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "astro-integration"
+    ],
+    "author": "NoustaphaDev",
+    "dependencies": {
+        "astro": "^1.2.4"
+    },
+    "devDependencies": {
+        "@types/node": "^18.7.13",
+        "typescript": "^4.8.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": ""
+    }
+}
