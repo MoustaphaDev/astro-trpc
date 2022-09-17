@@ -1,1 +1,0 @@
-rm -rf ./demo/node_modules/astro-trpc && cp -r ./dist ./demo/node_modules/astro-trpc
