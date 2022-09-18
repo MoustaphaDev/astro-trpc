@@ -1,4 +1,4 @@
-import { CreateContextFn } from './@types/astro-trpc';
+import { CreateContextFn } from './types';
 import { resolveHTTPResponse, TRPCError } from '@trpc/server/';
 import type { APIRoute } from 'astro';
 import type { AnyRouter, Dict } from '@trpc/server/';
