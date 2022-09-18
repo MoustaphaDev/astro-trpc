@@ -1,14 +1,10 @@
-// import queryString from 'query-string';
 import { CreateContextFn } from './@types/astro-trpc';
-import type { APIRoute, APIContext } from 'astro';
+import { resolveHTTPResponse, TRPCError } from '@trpc/server/';
+import type { APIRoute } from 'astro';
 import type { AnyRouter, Dict } from '@trpc/server/';
-import { resolveHTTPResponse } from '@trpc/server/';
-import { TRPCError } from '@trpc/server/';
-import { HTTPRequest } from '@trpc/server/dist/declarations/src/http/internals/types';
+import type { HTTPRequest } from '@trpc/server/dist/declarations/src/http/internals/types';
 
-export type CreateNextContextOptions = APIContext;
-
-export function createAstroApiHandler<TRouter extends AnyRouter>(opts: {
+export function createAstroTRPCApiHandler<TRouter extends AnyRouter>(opts: {
     router: TRouter;
     createContext: CreateContextFn<TRouter>;
 }): APIRoute {

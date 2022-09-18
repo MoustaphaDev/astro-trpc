@@ -6,3 +6,5 @@ node scripts/generate-build-package.json.js
 
 # Copy new version to node_modules
 cp -r ./dist ./demo/node_modules/astro-trpc
+
+npm --prefix ./demo run dev
