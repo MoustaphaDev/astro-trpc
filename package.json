@@ -1,10 +1,20 @@
 {
     "name": "astro-trpc",
-    "version": "0.1.1",
-    "description": "",
+    "version": "0.1.2",
+    "description": "Astro tRPC - End-to-end typesafe APIs in Astro wesbites made easy",
     "license": "MIT",
     "type": "module",
     "types": "./dist/index.d.ts",
+    "typesVersions": {
+        "*": {
+            "server": [
+                "./dist/server.d.ts"
+            ],
+            "client": [
+                "./dist/client.d.ts"
+            ]
+        }
+    },
     "exports": {
         ".": "./dist/index.js",
         "./server": "./dist/server.js",
@@ -25,7 +35,11 @@
         "prepublishOnly": "npm run clean && npm run build"
     },
     "keywords": [
-        "astro-integration"
+        "astro-integration",
+        "api-client",
+        "trpc",
+        "astro",
+        "astro-trpc"
     ],
     "author": "NoustaphaDev",
     "dependencies": {

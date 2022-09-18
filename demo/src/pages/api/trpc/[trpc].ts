@@ -1,5 +1,4 @@
-import { createAstroTRPCApiHandler } from 'astro-trpc/dist/server';
-
+import { createAstroTRPCApiHandler } from 'astro-trpc/server';
 import * as trpc from '@trpc/server';
 import { z } from 'zod';
 export const appRouter = trpc.router().query('greeting', {
