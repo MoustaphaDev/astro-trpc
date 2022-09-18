@@ -19,10 +19,10 @@
     "scripts": {
         "build": "tsc",
         "clean": "rm -rf ./dist",
+        "test": "vitest",
         "dev": "tsc-watch --onSuccess 'sh ./scripts/dev-script.sh'",
         "prebuild": "npm run clean",
-        "prepublishOnly": "npm run clean && npm run build",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "prepublishOnly": "npm run clean && npm run build"
     },
     "keywords": [
         "astro-integration"
@@ -36,7 +36,8 @@
     "devDependencies": {
         "@types/node": "^18.7.13",
         "tsc-watch": "^5.0.3",
-        "typescript": "^4.8.2"
+        "typescript": "^4.8.2",
+        "vitest": "^0.23.2"
     },
     "repository": {
         "type": "git",
