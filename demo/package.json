@@ -10,10 +10,10 @@
         "astro": "astro"
     },
     "devDependencies": {
-        "astro": "^1.2.4",
-        "astro-trpc": "^0.1.0"
+        "astro": "^1.2.4"
     },
     "dependencies": {
-        "@astrojs/node": "^1.0.1"
+        "@astrojs/node": "^1.0.1",
+        "astro-trpc": "file:.."
     }
 }

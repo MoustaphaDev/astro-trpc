@@ -6,9 +6,9 @@
     "type": "module",
     "types": "./index.d.ts",
     "exports": {
-        ".": "./index.js",
-        "./server": "./server.js",
-        "./client": "./client.js"
+        ".": "./dist/index.js",
+        "./server": "./dist/server.js",
+        "./client": "./dist/client.js"
     },
     "files": [
         "dist"
