@@ -5,7 +5,7 @@ import { useTRPCClient } from 'astro-trpc/client';
 // TODO create integration to have a wrapper around this client
 // so that the config lives in the astro.config.mjs
 const client = useTRPCClient<AppRouter>();
-const data = await client.query("greeting", {text: "wonderful"});
+const data = await client.query("greeting", {text: "thor"});
 ---
 
 <meta charset="utf-8" />

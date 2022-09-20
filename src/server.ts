@@ -1,7 +1,7 @@
 import { CreateContextFn } from './types';
-import { resolveHTTPResponse, TRPCError } from '@trpc/server/';
+import { resolveHTTPResponse, TRPCError } from '@trpc/server';
 import type { APIRoute } from 'astro';
-import type { AnyRouter, Dict } from '@trpc/server/';
+import type { AnyRouter, Dict } from '@trpc/server';
 import type { HTTPRequest } from '@trpc/server/dist/declarations/src/http/internals/types';
 
 export function createAstroTRPCApiHandler<TRouter extends AnyRouter>(opts: {

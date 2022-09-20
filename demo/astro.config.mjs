@@ -1,6 +1,6 @@
 import { defineConfig } from 'astro/config';
-import astroTRPC from 'astro-trpc';
 import node from '@astrojs/node';
+import astroTRPC from 'astro-trpc';
 
 // https://astro.build/config
 export default defineConfig({

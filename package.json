@@ -1,6 +1,6 @@
 {
     "name": "astro-trpc",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "description": "Astro tRPC - End-to-end typesafe APIs in Astro wesbites made easy",
     "license": "MIT",
     "type": "module",
