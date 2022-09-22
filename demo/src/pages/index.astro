@@ -1,10 +1,8 @@
 ---
-import type {AppRouter} from "@/pages/api/trpc/[trpc]"
-import { useTRPCClient } from 'astro-trpc/client';
+import { client } from '@/lib/trpcClient';
 
 // TODO create integration to have a wrapper around this client
 // so that the config lives in the astro.config.mjs
-const client = useTRPCClient<AppRouter>();
 const data = await client.query("greeting", {text: "thor"});
 ---
 
