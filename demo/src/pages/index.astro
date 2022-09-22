@@ -1,9 +1,7 @@
 ---
-import { client } from '@/lib/trpcClient';
+import { client } from "../lib/trpcClient"
 
-// TODO create integration to have a wrapper around this client
-// so that the config lives in the astro.config.mjs
-const data = await client.query("greeting", {text: "thor"});
+const data = await client.query('greeting', {name: "Astro 🚀"})
 ---
 
 <meta charset="utf-8" />
@@ -13,5 +11,5 @@ const data = await client.query("greeting", {text: "thor"});
 <title>astro-trpc demo</title>
 
 <body>
-  <p> {data.greeting} </p>
+  <p> {data.greeting}  </p>
 </body>

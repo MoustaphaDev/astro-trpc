@@ -4,12 +4,12 @@ import { z } from 'zod';
 export const appRouter = trpc.router().query('greeting', {
     input: z
         .object({
-            text: z.string().nullish(),
+            name: z.string().nullish(),
         })
         .nullish(),
     resolve({ input }) {
         return {
-            greeting: `hello ${input?.text ?? 'world!'}`,
+            greeting: `hello ${input?.name ?? 'world!'}`,
         };
     },
 });

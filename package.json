@@ -1,6 +1,6 @@
 {
     "name": "astro-trpc",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "description": "Astro tRPC - End-to-end typesafe APIs in Astro wesbites made easy",
     "license": "MIT",
     "main": "./dist/index.js",
@@ -28,7 +28,6 @@
     ],
     "author": "NoustaphaDev",
     "dependencies": {
-        "@trpc/client": "^9.27.2",
         "@trpc/server": "^9.27.2",
         "astro": "^1.2.4"
     },

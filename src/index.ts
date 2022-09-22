@@ -1,3 +1,2 @@
-export { createAstroTRPCApiHandler } from './server';
-export { createAstroTRPCClient } from './client';
+export { createAstroTRPCApiHandler } from './astro-adapter';
 export type { CreateContextFn } from './types';

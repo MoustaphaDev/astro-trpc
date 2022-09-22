@@ -1,7 +1,7 @@
-import { createAstroTRPCClient } from 'astro-trpc';
-import type { AppRouter } from '@/pages/api/trpc/[trpc]';
+import { createTRPCClient } from '@trpc/client';
+import type { AppRouter } from '../pages/api/trpc/[trpc]';
 
-export const client = createAstroTRPCClient<AppRouter>({
+export const client = createTRPCClient<AppRouter>({
     url:
         process.env.NODE_ENV === 'production'
             ? import.meta.env.TRPC_ENDPOINT_URL

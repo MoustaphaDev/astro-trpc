@@ -1,14 +1,18 @@
 lockfileVersion: 5.4
 
 specifiers:
-  astro: ^1.2.4
-  astro-trpc: ^0.2.0
+  '@astrojs/node': ^1.0.1
+  '@trpc/client': ^9.27.2
+  astro: ^1.3.0
+  astro-trpc: ^0.3.0
 
 dependencies:
-  astro-trpc: 0.2.0
+  '@astrojs/node': 1.0.1
+  '@trpc/client': 9.27.2
+  astro-trpc: 0.3.0
 
 devDependencies:
-  astro: 1.2.8
+  astro: 1.3.0
 
 packages:
 
@@ -25,15 +29,15 @@ packages:
   /@astrojs/compiler/0.24.0:
     resolution: {integrity: sha512-xZ81C/oMfExdF18I1Tyd2BKKzBqO+qYYctSy4iCwH4UWSo/4Y8A8MAzV1hG67uuE7hFRourSl6H5KUbhyChv/A==}
 
-  /@astrojs/language-server/0.23.3:
-    resolution: {integrity: sha512-ROoMKo37NZ76pE/A2xHfjDlgfsNnFmkhL4+Wifs0L855n73SUCbnXz7ZaQktIGAq2Te2TpSjAawiOx0q9L5qeg==}
+  /@astrojs/language-server/0.26.2:
+    resolution: {integrity: sha512-9nkfdd6CMXLDIJojnwbYu5XrYfOI+g63JlktOlpFCwFjFNpm1u0e/+pXXmj6Zs+PkSTo0kV1UM77dRKRS5OC1Q==}
     hasBin: true
     dependencies:
       '@vscode/emmet-helper': 2.8.4
+      events: 3.3.0
       prettier: 2.7.1
       prettier-plugin-astro: 0.5.4
       source-map: 0.7.4
-      typescript: 4.6.4
       vscode-css-languageservice: 6.1.1
       vscode-html-languageservice: 5.0.2
       vscode-languageserver: 8.0.2
@@ -82,6 +86,12 @@ packages:
       micromark-util-types: 1.0.2
       uvu: 0.5.6
       vfile-message: 3.1.2
+
+  /@astrojs/node/1.0.1:
+    resolution: {integrity: sha512-04IwC4DEkEBdZll1jIx2EQSaj6hWPwzYaU6ATL2tbQD3cEgRN8xV69dkmsZMpdlC+gdezu5VivgNrTrQFiw72g==}
+    dependencies:
+      '@astrojs/webapi': 1.0.0
+    dev: false
 
   /@astrojs/prism/1.0.1:
     resolution: {integrity: sha512-HxEFslvbv+cfOs51q/C7aMVFuW3EAGg0d1xXU/0e/QeScDzfrp5Ra4SOb8mV082SgENVjtVvet4zR84t3at4VQ==}
@@ -440,13 +450,12 @@ packages:
       '@proload/core': 0.3.3
       tsm: 2.2.2
 
-  /@trpc/client/9.27.2_@trpc+server@9.27.2:
+  /@trpc/client/9.27.2:
     resolution: {integrity: sha512-rpsgJJMalOtki5VjcyheL0zdft23mDnoBHn5cJMZLf3ssymCZq2crbvCiUmCRU289lYHrqffaaZ+9PqCSsVKfg==}
     peerDependencies:
       '@trpc/server': 9.27.2
     dependencies:
       '@babel/runtime': 7.19.0
-      '@trpc/server': 9.27.2
     dev: false
 
   /@trpc/server/9.27.2:
@@ -605,12 +614,11 @@ packages:
     dependencies:
       tslib: 2.4.0
 
-  /astro-trpc/0.2.0:
-    resolution: {integrity: sha512-UIZk5poRahkdJ6gs0b4BuUfTGKCMjzHMddO1Wo+8Q8VA8SIOIdIJy2w3Vf9tWAj7h+m2fc0yMkKf04fVIl8DXw==}
+  /astro-trpc/0.3.0:
+    resolution: {integrity: sha512-BdFfivWXDvsVK6JHvSuJgppggb4XsN3TjwRs/hU5HymM4bZwD1JiUzG3oYZwSrEzL29BDeiVicCWfBZX7WTtsg==}
     dependencies:
-      '@trpc/client': 9.27.2_@trpc+server@9.27.2
       '@trpc/server': 9.27.2
-      astro: 1.2.8
+      astro: 1.3.0
     transitivePeerDependencies:
       - less
       - sass
@@ -620,13 +628,13 @@ packages:
       - ts-node
     dev: false
 
-  /astro/1.2.8:
-    resolution: {integrity: sha512-KJkaOXN36tVvID2OOCn0kdAymwGtjHUDDb/bDbkMA8wMncrxzOOnppmytFHhKzeBhYsJVjj1Lc6H0FgSG2WwEg==}
+  /astro/1.3.0:
+    resolution: {integrity: sha512-cWBtLkkUcj38J0knrTaZvyoVFJxjOAWPRbECIXFxvGZ/ASNr+FNumeUk/u3uAGIF0pbqEgc+5zAvmPoe0pCd9w==}
     engines: {node: ^14.18.0 || >=16.12.0, npm: '>=6.14.0'}
     hasBin: true
     dependencies:
       '@astrojs/compiler': 0.24.0
-      '@astrojs/language-server': 0.23.3
+      '@astrojs/language-server': 0.26.2
       '@astrojs/markdown-remark': 1.1.2
       '@astrojs/telemetry': 1.0.0
       '@astrojs/webapi': 1.0.0
@@ -677,6 +685,7 @@ packages:
       strip-ansi: 7.0.1
       supports-esm: 1.0.0
       tsconfig-resolver: 3.0.1
+      typescript: 4.8.3
       unist-util-visit: 4.1.1
       vfile: 5.3.5
       vite: 3.1.3
@@ -1319,6 +1328,10 @@ packages:
     dependencies:
       '@types/estree-jsx': 1.0.0
       '@types/unist': 2.0.6
+
+  /events/3.3.0:
+    resolution: {integrity: sha512-mQw+2fkQbALzQ7V0MY0IqdnXNOeTtP4r0lN9z7AAawCXgqea7bDii20AYrIBrFd/Hx0M2Ocz6S111CaFkUcb0Q==}
+    engines: {node: '>=0.8.x'}
 
   /execa/6.1.0:
     resolution: {integrity: sha512-QVWlX2e50heYJcCPG0iWtf8r0xjEYfz/OYLGDYH+IyjWezzPNxz63qNFOu0l4YftGWuizFVZHHs8PrLU5p2IDA==}
@@ -2784,8 +2797,8 @@ packages:
     resolution: {integrity: sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA==}
     engines: {node: '>=12.20'}
 
-  /typescript/4.6.4:
-    resolution: {integrity: sha512-9ia/jWHIEbo49HfjrLGfKbZSuWo9iTMwXO+Ca3pRsSpbsMbc7/IU8NKdCZVRRBafVPGnoJeFL76ZOAA84I9fEg==}
+  /typescript/4.8.3:
+    resolution: {integrity: sha512-goMHfm00nWPa8UvR/CPSvykqf6dVV8x/dp0c5mFTMTIu0u0FlGWRioyy7Nn0PGAdHxpJZnuO/ut+PpQ8UiHAig==}
     engines: {node: '>=4.2.0'}
     hasBin: true
 
