@@ -45,8 +45,7 @@ Try out the minimal demo. We hope you enjoy it.
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/MoustaphaDev/astro-trpc/tree/master/demo)
 
 
-<!-- ### Many Thanks to all (be the first one 🙃) the `Stargazers` who have supported this project with stars(⭐) -->
-### All Startgazers
+### Many Thanks to all the `Stargazers` who have supported this project with stars(⭐)
 
 [![Stargazers repo roster for astro-trpc](https://reporoster.com/stars/MoustaphaDev/astro-trpc)](https://github.com/MoustaphaDev/astro-trpc/stargazers)
 
