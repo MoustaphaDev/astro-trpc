@@ -186,7 +186,7 @@ If you find something is missing, we're listening listening. Please create a fea
 
 
 # 🤝 Contributing to `astro-trpc`
-Any kind of positive contribution is welcome! Please help us grow by contributing to the project.
+Any kind of positive contribution is welcome! Please help us improve this project by contributing.
 
 # 🙏 Support
 
