@@ -34,6 +34,22 @@
     <a href="https://github.com/MoustaphaDev/astro-trpc/issues/new/choose">Request Feature</a>
 </p>
 
+
+
+<!-- TOC start -->
+# Table of contents
+
+- [Introducing `astro-trpc`](#-introducing-astro-trpc)
+- [Demo](#-demo)
+- [Basic file structure](#basic-file-structure)
+- [Quickstart](#-quickstart)
+- [How to use](#how-to-use)
+- [Inspired by](#-inspired-by)
+- [License](#%EF%B8%8F-license)
+- [Contributing to `astro-trpc`](#-contributing-to-astro-trpc)
+- [Support](#-support)
+<!-- TOC end --><!-- Generated with https://derlin.github.io/bitdowntoc/ -->
+
 # 👋 Introducing `astro-trpc`
 
 `astro-trpc` is a [tRPC](https://trpc.io/) adapter allowing you to easily build typesafe APIs in [Astro](https://astro.build/).
