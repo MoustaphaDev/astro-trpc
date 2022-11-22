@@ -1,0 +1,51 @@
+# Inspired by (STOLEN FROM!) the astro repro `release.yml` workflow
+name: Release
+
+on:
+    push:
+        branches:
+            - master
+
+defaults:
+    run:
+        shell: bash
+
+jobs:
+    changelog:
+        name: Changelog PR or Release
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+              with:
+                  # This makes action fetch all Git history so that Changesets can generate changelogs with the correct commits
+                  fetch-depth: 0
+
+            - name: Setup PNPM
+              uses: pnpm/action-setup@v2.2.1
+
+            - name: Setup Node
+              uses: actions/setup-node@v3
+              with:
+                  node-version: 16
+                  cache: 'pnpm'
+
+            - name: Install dependencies
+              run: pnpm install
+
+            - name: Build Packages
+              run: pnpm run build
+
+            - name: Create Release Pull Request or Publish
+              id: changesets
+              uses: changesets/action@v1
+              with:
+                  # Note: pnpm install after versioning is necessary to refresh lockfile
+                  version: pnpm run version
+                  publish: pnpm exec changeset publish
+                  commit: '[ci] release'
+                  title: '[ci] release'
+              env:
+                  # Needs access to push to master
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  # Needs access to publish to npm
+                  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
