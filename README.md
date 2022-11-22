@@ -39,16 +39,22 @@
 <!-- TOC start -->
 # Table of contents
 
-- [Introducing `astro-trpc`](#-introducing-astro-trpc)
-- [Demo](#-demo)
+- [Table of contents](#table-of-contents)
+- [👋 Introducing `astro-trpc`](#-introducing-astro-trpc)
+- [🚀 Demo](#-demo)
+    - [Many Thanks to all the `Stargazers` who have supported this project with stars(⭐)](#many-thanks-to-all-the-stargazers-who-have-supported-this-project-with-stars)
 - [Basic file structure](#basic-file-structure)
-- [Quickstart](#-quickstart)
+- [💻 Quickstart](#-quickstart)
 - [How to use](#how-to-use)
-- [Inspired by](#-inspired-by)
-- [License](#%EF%B8%8F-license)
-- [Contributing to `astro-trpc`](#-contributing-to-astro-trpc)
-- [Support](#-support)
+    - [You can now enjoy the full power of tRPC in Astro 👏 !](#you-can-now-enjoy-the-full-power-of-trpc-in-astro--)
+- [💡 Inspired by](#-inspired-by)
+- [🛡️ License](#️-license)
+- [🤝 Contributing to `astro-trpc`](#-contributing-to-astro-trpc)
+- [🙏 Support](#-support)
 <!-- TOC end --><!-- Generated with https://derlin.github.io/bitdowntoc/ -->
+
+> **Note**
+> This package is not compatible with tRPC v10 yet. It will be updated soon.
 
 # 👋 Introducing `astro-trpc`
 
