@@ -39,20 +39,20 @@
 
 <!-- TOC start -->
 # Table of contents
-- [👋 Introducing `astro-trpc`](#-introducing-astro-trpc)
-- [🚀 Demo](#-demo)
+- [Introducing `astro-trpc`](#-introducing-astro-trpc)
+- [Demo](#-demo)
 - [Basic file structure](#basic-file-structure)
-- [💻 Quickstart](#-quickstart)
-- [📚️ How to use](#️-how-to-use)
-- [💡 Inspired by](#-inspired-by)
-- [🛡️ License](#️-license)
-- [🤝 Contributing to `astro-trpc`](#-contributing-to-astro-trpc)
-- [🙏 Support](#-support)
+- [Quickstart](#-quickstart)
+- [How to use](#️-how-to-use)
+- [Inspired by](#-inspired-by)
+- [License](#️-license)
+- [Contributing to `astro-trpc`](#-contributing-to-astro-trpc)
+- [Support](#-support)
 
 <!-- TOC end --><!-- Generated with https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one -->
 
 > **Note**
-> This package is not compatible with tRPC v10 yet. It will be updated soon.
+> We do not support tRPC v10 yet. We will migrate to v10 soon.
 
 # 👋 Introducing `astro-trpc`
 
