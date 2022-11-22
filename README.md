@@ -58,6 +58,7 @@
 
 `astro-trpc` is a [tRPC](https://trpc.io/) adapter allowing you to easily build typesafe APIs in [Astro](https://astro.build/).
 No code generation, run-time bloat, or build pipeline.
+
 ### Many Thanks to all the `Stargazers` who have supported this project with stars(⭐)
 
 [![Stargazers repo roster for astro-trpc](https://reporoster.com/stars/MoustaphaDev/astro-trpc)](https://github.com/MoustaphaDev/astro-trpc/stargazers)
