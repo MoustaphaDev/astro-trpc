@@ -30,9 +30,9 @@
 <p align="center">
     <a href="https://stackblitz.com/github/MoustaphaDev/astro-trpc/tree/master/demo" target="_blank">View Demo</a>
     ·
-    <a href="https://github.com/MoustaphaDev/astro-trpc/issues/new/choose">Report Bug</a>
+    <a href="https://github.com/MoustaphaDev/astro-trpc/issues/new/choose" target="_blank">Report Bug</a>
     ·
-    <a href="https://github.com/MoustaphaDev/astro-trpc/issues/new/choose">Request Feature</a>
+    <a href="https://github.com/MoustaphaDev/astro-trpc/issues/new/choose" target="_blank">Request Feature</a>
 </p>
 
 
