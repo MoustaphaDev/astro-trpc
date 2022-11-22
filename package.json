@@ -19,7 +19,8 @@
         "dev": "tsc --watch",
         "prebuild": "npm run clean",
         "changeset": "changeset",
-        "release": "pnpm run build && changeset publish"
+        "release": "pnpm run build && changeset publish",
+        "version": "changeset version && pnpm install --no-frozen-lockfile"
     },
     "keywords": [
         "api-client",
