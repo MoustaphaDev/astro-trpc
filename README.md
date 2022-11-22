@@ -51,9 +51,6 @@
 
 <!-- TOC end --><!-- Generated with https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one -->
 
-> **Note**
-> We do not support tRPC v10 yet. We will migrate to v10 soon.
-
 # 👋 Introducing `astro-trpc`
 
 `astro-trpc` is a [tRPC](https://trpc.io/) adapter allowing you to easily build typesafe APIs in [Astro](https://astro.build/).
@@ -68,7 +65,8 @@ Try out the minimal demo. We hope you enjoy it.
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/MoustaphaDev/astro-trpc/tree/master/demo)
 
-
+> **Warning**\
+> We do not support tRPC v10 yet. We will migrate to v10 soon.
 
 #  Basic file structure
 
