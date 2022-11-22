@@ -7,53 +7,61 @@
 <h4 align="center">End-to-end typesafe APIs in Astro wesbites made easy </h4>
 
 <p align="center">
-<a href="https://github.com/MoustaphaDev/astro-trpc/blob/master/LICENSE" target="blank">
-<img src="https://img.shields.io/github/license/MoustaphaDev/astro-trpc?style=flat-square" alt="astro-trpc licence" />
-</a>
-<a href="https://github.com/MoustaphaDev/astro-trpc/fork" target="blank">
-<img src="https://img.shields.io/github/forks/MoustaphaDev/astro-trpc?style=flat-square" alt="astro-trpc forks"/>
-</a>
-<a href="https://github.com/MoustaphaDev/astro-trpc/stargazers" target="blank">
-<img src="https://img.shields.io/github/stars/MoustaphaDev/astro-trpc?style=flat-square" alt="astro-trpc stars"/>
-</a>
-<a href="https://github.com/MoustaphaDev/astro-trpc/issues" target="blank">
-<img src="https://img.shields.io/github/issues/MoustaphaDev/astro-trpc?style=flat-square" alt="astro-trprc issues"/>
-</a>
-<a href="https://github.com/MoustaphaDev/astro-trpc/pulls" target="blank">
-<img src="https://img.shields.io/github/issues-pr/MoustaphaDev/astro-trpc?style=flat-square" alt="astro-trpc pull-requests"/>
-</a>
-<a href="https://twitter.com/intent/tweet?text=tRPC%20in%20Astro%20👀"><img src="https://img.shields.io/twitter/url?label=Share%20on%20Twitter&style=social&url=https%3A%2F%2Fgithub.com%2FmoustaphaDev%2Fastro-trpc"></a>
-
+    <a href="https://github.com/MoustaphaDev/astro-trpc/blob/master/LICENSE" target="_blank">
+        <img src="https://img.shields.io/github/license/MoustaphaDev/astro-trpc?style=flat-square" alt="astro-trpc licence" />
+    </a>
+    <a href="https://github.com/MoustaphaDev/astro-trpc/fork" target="_blank">
+        <img src="https://img.shields.io/github/forks/MoustaphaDev/astro-trpc?style=flat-square" alt="astro-trpc forks"/>
+    </a>
+    <a href="https://github.com/MoustaphaDev/astro-trpc/stargazers" target="_blank">
+        <img src="https://img.shields.io/github/stars/MoustaphaDev/astro-trpc?style=flat-square" alt="astro-trpc stars"/>
+    </a>
+    <a href="https://github.com/MoustaphaDev/astro-trpc/issues" target="_blank">
+        <img src="https://img.shields.io/github/issues/MoustaphaDev/astro-trpc?style=flat-square" alt="astro-trprc issues"/>
+    </a>
+    <a href="https://github.com/MoustaphaDev/astro-trpc/pulls" target="_blank">
+        <img src="https://img.shields.io/github/issues-pr/MoustaphaDev/astro-trpc?style=flat-square" alt="astro-trpc pull-requests"/>
+    </a>
+    <a href="https://npmjs.com/package/astro-trpc" target="_blank">
+        <img src="https://img.shields.io/npm/dt/astro-trpc.svg" alt="astro-trpc total downloads" />
+    </a>
 </p>
 
 <p align="center">
-    <a href="https://stackblitz.com/github/MoustaphaDev/astro-trpc/tree/master/demo" target="blank">View Demo</a>
+    <a href="https://stackblitz.com/github/MoustaphaDev/astro-trpc/tree/master/demo" target="_blank">View Demo</a>
     ·
-    <a href="https://github.com/MoustaphaDev/astro-trpc/issues/new/choose">Report Bug</a>
+    <a href="https://github.com/MoustaphaDev/astro-trpc/issues/new/choose" target="_blank">Report Bug</a>
     ·
-    <a href="https://github.com/MoustaphaDev/astro-trpc/issues/new/choose">Request Feature</a>
+    <a href="https://github.com/MoustaphaDev/astro-trpc/issues/new/choose" target="_blank">Request Feature</a>
 </p>
 
 
 
 <!-- TOC start -->
 # Table of contents
-
 - [Introducing `astro-trpc`](#-introducing-astro-trpc)
 - [Demo](#-demo)
 - [Basic file structure](#basic-file-structure)
 - [Quickstart](#-quickstart)
-- [How to use](#how-to-use)
+- [How to use](#️-how-to-use)
 - [Inspired by](#-inspired-by)
-- [License](#%EF%B8%8F-license)
+- [License](#️-license)
 - [Contributing to `astro-trpc`](#-contributing-to-astro-trpc)
 - [Support](#-support)
-<!-- TOC end --><!-- Generated with https://derlin.github.io/bitdowntoc/ -->
+
+<!-- TOC end --><!-- Generated with https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one -->
+
+> **Note**
+> We do not support tRPC v10 yet. We will migrate to v10 soon.
 
 # 👋 Introducing `astro-trpc`
 
 `astro-trpc` is a [tRPC](https://trpc.io/) adapter allowing you to easily build typesafe APIs in [Astro](https://astro.build/).
 No code generation, run-time bloat, or build pipeline.
+
+### Many Thanks to all the `Stargazers` who have supported this project with stars(⭐)
+
+[![Stargazers repo roster for astro-trpc](https://reporoster.com/stars/MoustaphaDev/astro-trpc)](https://github.com/MoustaphaDev/astro-trpc/stargazers)
 
 # 🚀 Demo
 Try out the minimal demo. We hope you enjoy it.
@@ -61,9 +69,6 @@ Try out the minimal demo. We hope you enjoy it.
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/MoustaphaDev/astro-trpc/tree/master/demo)
 
 
-### Many Thanks to all the `Stargazers` who have supported this project with stars(⭐)
-
-[![Stargazers repo roster for astro-trpc](https://reporoster.com/stars/MoustaphaDev/astro-trpc)](https://github.com/MoustaphaDev/astro-trpc/stargazers)
 
 #  Basic file structure
 
@@ -100,7 +105,7 @@ pnpm install astro-trpc @trpc/client
 
 **Note:** If you want to use [zod](https://github.com/colinhacks/zod) for input validation - which we we'll use in this introduction - make sure you have enabled [strict mode](https://trpc.io/docs/v10/react#2-enable-strict-mode) in your `tsconfig.json`
 
-# How to use
+# 📚️ How to use
 
 First, let's create our router in our tRPC endpoint, we will use [zod](https://github.com/colinhacks/zod) for validation but you don't have to. For that, we will create a `[trpc].ts` file in the `pages/api/trpc` folder:
 ```js
