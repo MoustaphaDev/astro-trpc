@@ -1,3 +1,7 @@
+> **Warning**
+> ### This package is deprecated because tRPC v10 implemented new feature that made it easy to use inside of Astro, noticably the new [fetch adapter](https://trpc.io/docs/fetch). We thank you for being part of this project and hope to see you in the future :)
+
+
 <!-- Ignore the comments, they are for the most placeholders for ideas -->
 <p align="center">
     <img src="./public/astro+trpc.png" alt="logo" width="500"/>
