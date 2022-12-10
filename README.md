@@ -69,9 +69,6 @@ Try out the minimal demo. We hope you enjoy it.
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/MoustaphaDev/astro-trpc/tree/master/demo)
 
-> **Warning**\
-> We do not support tRPC v10 yet. We will migrate to v10 soon.
-
 #  Basic file structure
 
 Your file structure should look something like this:
